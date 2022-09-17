@@ -1,0 +1,177 @@
+// list of most color variables and themes
+// based on the meitnerium theme
+
+// standard values
+:root {
+  // basic colors
+  --dark-poole-001: #21262b;
+  --dark-poole-002: #fefbec;
+  --dark-poole-link-color: #dededd;
+  --dark-poole-link-hover: #3160f2;
+
+  // colors
+  --red: #f32e2e;
+  --pink: #ff9f9f;
+  --grape: #c930f3;
+  --purple: #e279ff;
+  --indigo: #3160f2;
+  --blue: #7c9cff;
+  --cyan: #2beeb4;
+  --teal: #75ffd6;
+  --green: #75ee37;
+  --yellow: #f2cf26;
+  --orange: #ffe87b;
+
+  // color variations
+  --blue-300: #7c9cff;
+  --blue-400: #7c9cff;
+  --yellow-100: #f2cf26;
+
+  // font settings
+  --body-font: sans-serif, "IBM Plex Sans" -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --body-font-size: 20px;
+  --body-line-height: 1.5;
+  --body-color: #fefbec;
+  --body-bg: #21262b;
+
+  // link settings
+  --link-color: var(--blue);
+  --link-hover-color: #1c7ed6;
+
+  --heading-color: #7c9cff;
+
+  --border-color: #3160f2;
+  --border-radius: 0.5rem;
+
+  --code-font: "IBM Plex Mono", SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --code-color: var(--grape);
+  --code-bg: var(--gray-000);
+
+  --spacer: 1rem;
+  --spacer-2: calc(var(--spacer) * 1.5);
+  --spacer-3: calc(var(--spacer) * 5);
+}
+
+// standard values for media
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-color: #fefbec;
+    --body-bg: #21262b;
+    --heading-color: #7c9cff;
+    --link-color: #dededd;
+    --link-hover-color: #3160f2;
+    --border-color: #3160f2;
+    --code-bg: #424b55;
+  }
+}
+
+// List of custom themes
+// Based on the Meitnerium Theme
+// To set a theme change the "class=<THEME>" in .\_layouts\default.html
+
+// Red theme
+// Dark background with red accents, white text
+.red {
+  --body-color: #fefbec;
+  --body-bg: #21262b;
+  --heading-color: #ff9f9f;
+  --link-color: #dededd;
+  --link-hover-color: #f32e2e;
+  --border-color: #f32e2e;
+  --code-bg: #424b55;
+}
+
+// Green theme
+// Dark background with green accents, white text
+.green {
+  --body-color: #fefbec;
+  --body-bg: #21262b;
+  --heading-color: #acff82;
+  --link-color: #dededd;
+  --link-hover-color: #75ee37;
+  --border-color: #75ee37;
+  --code-bg: #424b55;
+}
+
+// Yellow theme
+// Dark background with yellow accents, white text
+.yellow {
+  --body-color: #fefbec;
+  --body-bg: #21262b;
+  --heading-color: #ffe87b;
+  --link-color: #dededd;
+  --link-hover-color: #f2cf26;
+  --border-color: #f2cf26;
+  --code-bg: #424b55;
+}
+
+// STANDARD THEME - is also set as fallback
+// Blue theme
+// Dark background with blue accents, white text
+.blue {
+  --body-color: #fefbec;
+  --body-bg: #21262b;
+  --heading-color: #7c9cff;
+  --link-color: #dededd;
+  --link-hover-color: #3160f2;
+  --border-color: #3160f2;
+  --code-bg: #424b55;
+}
+
+// Magenta theme
+// Dark background with magenta accents, white text
+.magenta {
+  --body-color: #fefbec;
+  --body-bg: #21262b;
+  --heading-color: #e279ff;
+  --link-color: #dededd;
+  --link-hover-color: #c930f3;
+  --border-color: #c930f3;
+  --code-bg: #424b55;
+}
+
+// Cyan theme
+// Dark background with cyan accents, white text
+.cyan {
+  --body-color: #fefbec;
+  --body-bg: #21262b;
+  --heading-color: #75ffd6;
+  --link-color: #dededd;
+  --link-hover-color: #2beeb4;
+  --border-color: #2beeb4;
+  --code-bg: #424b55;
+}
+
+// White theme
+// White background and black text
+.white {
+  --body-color: #fefbec;
+  --body-bg: #21262b;
+  --heading-color: #fefbec;
+  --link-color: #dededd;
+  --link-hover-color: #95917d;
+  --border-color: #95917d;
+  --code-bg: #424b55;
+}
+
+// Berlin
+// Theme for page 030.one
+// Dark theme with white text and a custom font
+.berlin {
+  --body-color: #fefbec;
+  --body-bg: #21262b;
+  --heading-color: #fefbec;
+  --link-color: #dededd;
+  --link-hover-color: #95917d;
+  --border-color: #95917d;
+  --code-bg: #424b55;
+  --body-bg-transparent: rgb(33, 38, 43, 0.8);
+
+  --body-font: "BerlinTypeWeb-Regular", "Staatliches", "Bebas Neue", sans-serif,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}

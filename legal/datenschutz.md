@@ -1,0 +1,16 @@
+---
+layout: page
+title: Datenschutzerklärung
+---
+
+## DO NOT LEAVE THIS EMPTY
+
+## DO NOT LEAVE THIS EMPTY
+
+## DO NOT LEAVE THIS EMPTY
+
+## DO NOT LEAVE THIS EMPTY
+
+## DO NOT LEAVE THIS EMPTY
+
+## DO NOT LEAVE THIS EMPTY

@@ -1,0 +1,106 @@
+// Code
+//
+// Inline and block-level code snippets. Includes tweaks to syntax highlighted
+// snippets from Pygments/Rouge and Gist embeds.
+
+code,
+pre {
+  font-family: var(--code-font);
+}
+
+code {
+  font-size: 85%;
+}
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: var(--spacer-3);
+  overflow: auto;
+}
+
+.highlight {
+  padding: var(--spacer);
+  margin-bottom: var(--spacer);
+  background-color: var(--code-bg);
+  border-radius: var(--border-radius);
+
+  pre {
+    margin-bottom: 0;
+  }
+
+  // Triple backticks (code fencing) doubles the .highlight elements
+  .highlight {
+    padding: 0;
+  }
+}
+
+.rouge-table {
+  margin-bottom: 0;
+  font-size: 100%;
+
+  &,
+  td,
+  th {
+    border: 0;
+  }
+
+  .gutter {
+    vertical-align: top;
+    user-select: none;
+    opacity: 0.25;
+  }
+}
+
+// Gist via GitHub Pages
+.gist .markdown-body {
+  padding: 1px !important;
+  background: var(--body-bg);
+  color: var(--body-color);
+}
+
+body .gist .markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  border-radius: 6px;
+  color: var(--body-color);
+  background-color: var(--code-bg);
+  background: var(--code-bg);
+}
+
+body .gist .markdown-body code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  border: 0;
+  color: var(--body-color);
+  background-color: var(--code-bg);
+  background: var(--code-bg);
+}
+
+.gist table {
+  background-color: var(--body-bg);
+  background: var(--body-bg);
+  margin-bottom: 1rem;
+  width: 75%;
+  border: 0 solid var(--border-color);
+  border-collapse: collapse;
+}
+
+.gist td,
+th {
+  background-color: var(--body-bg);
+  background: var(--body-bg);
+  color: var(--body-color);
+  padding: 0.25rem 0.5rem;
+  border-color: var(--border-color);
+  border-style: solid;
+  border-width: 0;
+  border-bottom-width: 1px;
+}

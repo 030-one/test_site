@@ -1,0 +1,41 @@
+---
+layout: default
+title: Home
+---
+
+<h1>Hello</h1>
+
+<hr />
+
+<h2>List all posts</h2>
+
+{% for post in site.posts %}
+<ul>
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  <!-- The first lines of a post, as a small description-->
+  {{post.excerpt}}
+</ul>
+{% endfor %}
+
+<br />
+
+<hr />
+
+<br />
+
+<h2>Posts in categories</h2>
+
+<!-- List all Posts in all categories -->
+{% for category in site.categories %}
+<h3>{{ category[0] }}</h3>
+<ul>
+  {% for post in category[1] %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  <!-- The first lines of a post, as a small description-->
+  {{post.excerpt}} {% endfor %}
+</ul>
+{% endfor %}
+
+<br />
+
+<hr />

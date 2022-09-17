@@ -1,0 +1,78 @@
+// Body resets
+//
+// Update the foundational and global aspects of the page.
+
+* {
+  box-sizing: border-box;
+}
+
+// Body settings
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+  color: var(--body-color);
+  background-color: var(--body-bg);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+// Link colors and settings
+// No `:visited` state is required by default (browsers will use `a`)
+a {
+  color: var(--link-color);
+
+  // `:focus` is linked to `:hover` for basic accessibility
+  &:hover,
+  &:focus {
+    color: var(--link-hover-color);
+  }
+
+  strong {
+    color: inherit;
+  }
+}
+
+// Settings for images
+img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: var(--spacer);
+  border-radius: var(--border-radius);
+}
+
+// Settings for tables
+table {
+  margin-bottom: 1rem;
+  width: 75%;
+  border: 0 solid var(--border-color);
+  border-collapse: collapse;
+}
+
+// Settings for tables, and the cells
+td,
+th {
+  padding: 0.25rem 0.5rem;
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  border-bottom-width: 1px;
+}
+
+// Settings for table header
+th {
+  text-align: left;
+}
+
+// Settings for table header
+thead th {
+  border-bottom-color: var(--border-color);
+}
+
+// Settings for highlighting text
+mark {
+  padding: 0.15rem;
+  background-color: var(--yellow-100);
+  border-radius: 0.125rem;
+}

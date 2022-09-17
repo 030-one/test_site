@@ -1,0 +1,20 @@
+// Layout
+//
+// Styles for managing the structural hierarchy of the site.
+
+// All Content is displayed in a container
+// Background set here is behind every element
+// Not including footer and header
+.container {
+  max-width: 75rem;
+  padding-left: var(--spacer-2);
+  padding-right: var(--spacer-2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Footer settings
+footer {
+  margin-top: var(--spacer);
+  margin-bottom: var(--spacer);
+}
